@@ -1,0 +1,218 @@
+Info: Processing symbol 'C1:'.
+Info: Processing symbol 'U3:'.
+Info: Processing symbol 'C2:'.
+Info: Processing symbol 'R7:'.
+Info: Processing symbol 'C3:'.
+Info: Processing symbol 'U1:Package_SO:SOP-16_3.9x9.9mm_P1.27mm'.
+Info: Processing symbol 'C4:'.
+Info: Processing symbol 'R8:'.
+Info: Processing symbol 'J1:'.
+Info: Processing symbol 'U2:RF_Module:ESP32-WROOM-32'.
+Info: Processing symbol 'J2:'.
+Info: Processing symbol 'R9:'.
+Info: Processing symbol 'J3:'.
+Info: Processing symbol 'X1:Oscillator:Oscillator_DIP-14'.
+Info: Processing symbol 'J4:'.
+Info: Processing symbol 'R1:'.
+Info: Processing symbol 'J5:'.
+Info: Processing symbol 'R10:'.
+Info: Processing symbol 'J6:'.
+Info: Processing symbol 'R2:'.
+Info: Processing symbol 'Q1:'.
+Info: Processing symbol 'U6:'.
+Info: Processing symbol 'Q2:Package_TO_SOT_THT:TO-92_Inline'.
+Info: Processing symbol 'R3:'.
+Info: Processing symbol 'R11:'.
+Info: Processing symbol 'R4:'.
+Info: Processing symbol 'U4:'.
+Info: Processing symbol 'R5:'.
+Info: Processing symbol 'SW1:'.
+Info: Processing symbol 'R6:'.
+Connected U2 pin 39 to GND.
+Connected U2 pin 1 to GND.
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-SCK/CLK-Pad20).
+Connected U2 pin 20 to unconnected-(U2-SCK/CLK-Pad20).
+Added X1 (footprint 'Oscillator:Oscillator_DIP-14').
+Changed REF** reference designator to X1.
+Changed X1 value from Oscillator_DIP-14 to ACO-11MHz.
+Updated X1 symbol association from  to /a301af15-4480-4dae-a242-64f552d5c465.
+Updated X1 fields.
+Updated X1 sheetname to 'Root'.
+Added Q2 (footprint 'Package_TO_SOT_THT:TO-92_Inline').
+Changed REF** reference designator to Q2.
+Changed Q2 value from TO-92_Inline to S8550.
+Updated Q2 symbol association from  to /422a7e9a-33ed-4cef-8547-62cccaa18b52.
+Updated Q2 fields.
+Updated Q2 sheetname to 'Root'.
+Updated Q2 sheetfile to 'project1.kicad_sch'.
+Updated Q2 footprint filters to 'TO?92*'.
+Add net +3.3V.
+Connected Q2 pin 1 to +3.3V.
+Add net Net-(Q2-B).
+Connected Q2 pin 2 to Net-(Q2-B).
+Add net Net-(J2-Pin_1).
+Connected Q2 pin 3 to Net-(J2-Pin_1).
+Updated X1 sheetfile to 'project1.kicad_sch'.
+Updated X1 footprint filters to 'Oscillator*DIP*14*'.
+Connected X1 pin 14 to +3.3V.
+Connected X1 pin 7 to GND.
+Add net unconnected-(X1-OUT-Pad8).
+Connected X1 pin 8 to unconnected-(X1-OUT-Pad8).
+Add net unconnected-(X1-NC-Pad1).
+Connected X1 pin 1 to unconnected-(X1-NC-Pad1).
+Added U1 (footprint 'Package_SO:SOP-16_3.9x9.9mm_P1.27mm').
+Changed REF** reference designator to U1.
+Changed U1 value from SOP-16_3.9x9.9mm_P1.27mm to HX711.
+Updated U1 symbol association from  to /569d6c08-9232-4001-98fb-e43093d856b7.
+Updated U1 fields.
+Updated U1 sheetname to 'Root'.
+Updated U1 sheetfile to 'project1.kicad_sch'.
+Updated U1 footprint filters to 'SOP*3.9x9.9mm*P1.27mm*'.
+Add net GND.
+Connected U1 pin 5 to GND.
+Connected U1 pin 14 to GND.
+Add net unconnected-(U1-XO-Pad13).
+Connected U1 pin 13 to unconnected-(U1-XO-Pad13).
+Connected U1 pin 15 to GND.
+Add net Net-(U1-VBG).
+Connected U1 pin 6 to Net-(U1-VBG).
+Connected U1 pin 10 to GND.
+Connected U1 pin 1 to +3.3V.
+Add net Net-(U1-INA-).
+Connected U1 pin 7 to Net-(U1-INA-).
+Connected U1 pin 9 to GND.
+Add net Net-(U1-VFB).
+Connected U1 pin 4 to Net-(U1-VFB).
+Add net Net-(U1-PD_SCK).
+Connected U1 pin 11 to Net-(U1-PD_SCK).
+Connected U1 pin 3 to Net-(J2-Pin_1).
+Connected U1 pin 16 to +3.3V.
+Add net Net-(U1-DOUT).
+Connected U1 pin 12 to Net-(U1-DOUT).
+Add net Net-(U1-INA+).
+Connected U1 pin 8 to Net-(U1-INA+).
+Connected U1 pin 2 to Net-(Q2-B).
+Added U2 (footprint 'RF_Module:ESP32-WROOM-32').
+Changed REF** reference designator to U2.
+Updated U2 symbol association from  to /1d41e7d4-28ae-44ed-bed4-c70fb3c3bb19.
+Updated U2 fields.
+Updated U2 sheetname to 'Root'.
+Updated U2 sheetfile to 'project1.kicad_sch'.
+Updated U2 footprint filters to 'ESP32?WROOM?32*'.
+Add net unconnected-(U2-TXD0/IO1-Pad35).
+Connected U2 pin 35 to unconnected-(U2-TXD0/IO1-Pad35).
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-EN-Pad3).
+Connected U2 pin 3 to unconnected-(U2-EN-Pad3).
+Add net unconnected-(U2-NC-Pad32).
+Connected U2 pin 32 to unconnected-(U2-NC-Pad32).
+Add net unconnected-(U2-IO2-Pad24).
+Connected U2 pin 24 to unconnected-(U2-IO2-Pad24).
+Add net Net-(Q1-D).
+Connected U2 pin 7 to Net-(Q1-D).
+Connected U2 pin 27 to Net-(U1-DOUT).
+Add net unconnected-(U2-SENSOR_VP-Pad4).
+Connected U2 pin 4 to unconnected-(U2-SENSOR_VP-Pad4).
+Connected U2 pin 39 to GND.
+Connected U2 pin 39 to GND.
+Connected U2 pin 15 to GND.
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-IO19-Pad31).
+Connected U2 pin 31 to unconnected-(U2-IO19-Pad31).
+Add net unconnected-(U2-SCS/CMD-Pad19).
+Connected U2 pin 19 to unconnected-(U2-SCS/CMD-Pad19).
+Connected U2 pin 39 to GND.
+Connected U2 pin 39 to GND.
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-IO23-Pad37).
+Connected U2 pin 37 to unconnected-(U2-IO23-Pad37).
+Add net unconnected-(U2-SENSOR_VN-Pad5).
+Connected U2 pin 5 to unconnected-(U2-SENSOR_VN-Pad5).
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-SDI/SD1-Pad22).
+Connected U2 pin 22 to unconnected-(U2-SDI/SD1-Pad22).
+Connected U2 pin 39 to GND.
+Connected U2 pin 39 to GND.
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-IO32-Pad8).
+Connected U2 pin 8 to unconnected-(U2-IO32-Pad8).
+Connected U2 pin 26 to Net-(U1-PD_SCK).
+Add net unconnected-(U2-IO34-Pad6).
+Connected U2 pin 6 to unconnected-(U2-IO34-Pad6).
+Connected U2 pin 38 to GND.
+Add net unconnected-(U2-RXD0/IO3-Pad34).
+Connected U2 pin 34 to unconnected-(U2-RXD0/IO3-Pad34).
+Connected U2 pin 39 to GND.
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-IO27-Pad12).
+Connected U2 pin 12 to unconnected-(U2-IO27-Pad12).
+Add net unconnected-(U2-SDO/SD0-Pad21).
+Connected U2 pin 21 to unconnected-(U2-SDO/SD0-Pad21).
+Add net unconnected-(U2-IO26-Pad11).
+Connected U2 pin 11 to unconnected-(U2-IO26-Pad11).
+Add net unconnected-(U2-IO14-Pad13).
+Connected U2 pin 13 to unconnected-(U2-IO14-Pad13).
+Add net unconnected-(U2-SHD/SD2-Pad17).
+Connected U2 pin 17 to unconnected-(U2-SHD/SD2-Pad17).
+Add net unconnected-(U2-IO12-Pad14).
+Connected U2 pin 14 to unconnected-(U2-IO12-Pad14).
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-IO33-Pad9).
+Connected U2 pin 9 to unconnected-(U2-IO33-Pad9).
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-IO18-Pad30).
+Connected U2 pin 30 to unconnected-(U2-IO18-Pad30).
+Add net unconnected-(U2-IO0-Pad25).
+Connected U2 pin 25 to unconnected-(U2-IO0-Pad25).
+Add net unconnected-(U2-IO15-Pad23).
+Connected U2 pin 23 to unconnected-(U2-IO15-Pad23).
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-IO22-Pad36).
+Connected U2 pin 36 to unconnected-(U2-IO22-Pad36).
+Connected U2 pin 39 to GND.
+Connected U2 pin 39 to GND.
+Add net unconnected-(U2-IO25-Pad10).
+Connected U2 pin 10 to unconnected-(U2-IO25-Pad10).
+Add net unconnected-(U2-SWP/SD3-Pad18).
+Connected U2 pin 18 to unconnected-(U2-SWP/SD3-Pad18).
+Connected U2 pin 39 to GND.
+Connected U2 pin 39 to GND.
+Connected U2 pin 2 to +3.3V.
+Add net unconnected-(U2-IO17-Pad28).
+Connected U2 pin 28 to unconnected-(U2-IO17-Pad28).
+Add net unconnected-(U2-IO21-Pad33).
+Connected U2 pin 33 to unconnected-(U2-IO21-Pad33).
+Add net unconnected-(U2-IO13-Pad16).
+Connected U2 pin 16 to unconnected-(U2-IO13-Pad16).
+Add net unconnected-(U2-IO5-Pad29).
+Connected U2 pin 29 to unconnected-(U2-IO5-Pad29).
+Error: Cannot add C1 (no footprint assigned).
+Error: Cannot add C2 (no footprint assigned).
+Error: Cannot add C3 (no footprint assigned).
+Error: Cannot add C4 (no footprint assigned).
+Error: Cannot add J1 (no footprint assigned).
+Error: Cannot add J2 (no footprint assigned).
+Error: Cannot add J3 (no footprint assigned).
+Error: Cannot add J4 (no footprint assigned).
+Error: Cannot add J5 (no footprint assigned).
+Error: Cannot add J6 (no footprint assigned).
+Error: Cannot add Q1 (no footprint assigned).
+Error: Cannot add R1 (no footprint assigned).
+Error: Cannot add R2 (no footprint assigned).
+Error: Cannot add R3 (no footprint assigned).
+Error: Cannot add R4 (no footprint assigned).
+Error: Cannot add R5 (no footprint assigned).
+Error: Cannot add R6 (no footprint assigned).
+Error: Cannot add R7 (no footprint assigned).
+Error: Cannot add R8 (no footprint assigned).
+Error: Cannot add SW1 (no footprint assigned).
+Error: Cannot add U3 (no footprint assigned).
+Error: Cannot add R11 (no footprint assigned).
+Error: Cannot add U4 (no footprint assigned).
+Error: Cannot add R10 (no footprint assigned).
+Error: Cannot add U6 (no footprint assigned).
+Error: Cannot add R9 (no footprint assigned).
+
+
+Info: Total warnings: 0, errors: 26.
