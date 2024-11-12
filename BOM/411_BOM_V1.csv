@@ -1,11 +1,13 @@
 Bill Of Materials for: [TEAM NUMBER] [TEAM NAME],Team number 9,,,,,,,,
 Last modified: [DATE],,,,,,,,,
 PCB version: [PCB VERSION #],,,,,,,,,
-BOM revision: [BOM REVISION #],,P/NP,#NAME?,,,,,,
+BOM revision: [BOM REVISION #],,P/NP,Place/Not Place (components marked NP are Not stuffed on the board),,,,,,
 ,,,,,,,,,
 Cnt,Part References,P/NP,Mfg,Mfg PN,Description,Dist,Dist Part Number,Cost Ea.,Cost Total
+4,,NP,Texas Instrument,"	
+SN74LS21DR","	
+IC GATE AND 2CH 4-INP 14SOIC",Digi Key,296-38800-1-ND,$0.63 ,$2.52 
 ,,,,,,,,,
-,C22,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
