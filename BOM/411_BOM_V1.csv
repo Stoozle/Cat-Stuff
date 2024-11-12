@@ -6,15 +6,15 @@ BOM revision: [BOM REVISION #],,P/NP,Place/Not Place (components marked NP are N
 Cnt,Part References,P/NP,Mfg,Mfg PN,Description,Dist,Dist Part Number,Cost Ea.,Cost Total
 4,,NP,Texas Instrument,"	
 SN74LS21DR","	
-IC GATE AND 2CH 4-INP 14SOIC",Digi Key,296-38800-1-ND,$0.63 ,$2.52 
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
+IC GATE AND 2CH 4-INP 14SOIC",Digi Key,296-38800-1-ND ,$0.63 ,$2.52 
+2,,P,Infineon Technologies,BSS316NH6327XTSA1,MOSFET N-CH 30V 1.4A SOT23-3,Digi Key,BSS316NH6327XTSA1CT-ND ,$0.31 ,$0.62 
+4,,P,Microchip Technology,MCP6004T-I/SL,IC OPAMP GP 4 CIRCUIT 14SOIC,Digi Key,MCP6004T-I/SLCT-ND - Cut Tape (CT),$0.54 ,$2.16 
+2,,P,Espressif Systems,ESP32-S3R8,IC RF TXRX+MCU BLE 56QFN,Digi Key,1904-ESP32-S3R8CT-ND,$2.28 ,$4.56 
+2,,P,Espressif Systems,ESP32-S3-WROOM-1-N16R8,RF TXRX MOD BT WIFI PCB TH SMD,Digi Key,1965-ESP32-S3-WROOM-1-N16R8CT-ND,$3.90 ,$7.80 
+2,,NP,Amphenol ICC (FCI),10155435-00011LF,USB TYPE C R/A SMT 16PIN,Digi Key,609-10155435-00011LFCT-ND,$1.04 ,$2.08 
+4,,P,Diodes Incorporated,1N5819HW-7-F,DIODE SCHOTTKY 40V 1A SOD123,Digi Key,1N5819HW-FDICT-ND,$0.25 ,$1.00 
+2,,NP,C&K,PTS810SJM250SMTR LFS,SWITCH TACTILE SPST-NO 0.05A 16V,Digi Key,CKN10502CT-ND,$0.58 ,$1.16 
+2,,P,UMW,AMS1117-3.3,IC LDO REG 3.3V 1A SOT223,Digi Key,4518-AMS1117-3.3CT-ND,$0.68 ,$1.36 
 ,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
