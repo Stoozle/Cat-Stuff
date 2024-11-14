@@ -17806,17 +17806,6 @@
 		)
 	)
 	(gr_rect
-		(start 37.5 122)
-		(end 77 158)
-		(stroke
-			(width 0.2)
-			(type default)
-		)
-		(fill none)
-		(layer "F.Cu")
-		(uuid "44b4f4ea-ef92-44c8-8077-0d42a1b1acf3")
-	)
-	(gr_rect
 		(start 40 50.5)
 		(end 126 159.5)
 		(stroke
@@ -17827,41 +17816,117 @@
 		(layer "Edge.Cuts")
 		(uuid "3a4e2068-7615-440a-9bb0-ddf317b265f5")
 	)
-	(gr_text "Force Sensors"
-		(at 24 71.5 0)
-		(layer "F.Cu")
-		(uuid "07652d20-575b-4d64-971b-1de7243619e3")
+	(gr_rect
+		(start 35 43.5)
+		(end 56 123.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "0dc0f123-f081-4b98-9e97-8b38df084ac7")
+	)
+	(gr_rect
+		(start 77.5 109.5)
+		(end 134 163)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "550e7a50-7b2f-4e29-8666-456f8e34a42e")
+	)
+	(gr_rect
+		(start 78 38.5)
+		(end 102 84)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "70a4aae9-945a-42f4-9efa-838afb6f5ffb")
+	)
+	(gr_rect
+		(start 106 76.5)
+		(end 137.5 101)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "75183f83-0c9e-4206-bcdb-18157ce37313")
+	)
+	(gr_rect
+		(start 37.5 126)
+		(end 75.5 162.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "d4a48354-ef48-4a73-ab18-d590f3471529")
+	)
+	(gr_text "Power FLOPS"
+		(at 81.5 43 0)
+		(layer "User.1")
+		(uuid "27efb021-be09-4fa3-893e-00b6a8a0e6ce")
 		(effects
 			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
 	)
-	(gr_text "Power"
-		(at 85 44.5 0)
-		(layer "F.Cu")
-		(uuid "2085b5aa-6b75-4d35-87b0-01bb57f014c4")
+	(gr_text "Controller/Programmer"
+		(at 112 161.5 0)
+		(layer "User.1")
+		(uuid "33ba2bef-b983-4cea-967c-d03b4a983ed8")
 		(effects
 			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
 	)
-	(gr_text "Load Cell Connect"
-		(at 15.5 127.5 0)
-		(layer "F.Cu")
-		(uuid "fa614dca-871f-46ab-9a0e-e134cd09fb2b")
+	(gr_text "USB PROG/Power"
+		(at 109 79 0)
+		(layer "User.1")
+		(uuid "4a8c194e-53b8-41cf-9a21-75d0933296e8")
 		(effects
 			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Load Cell Connect & ADC"
+		(at 46 156.5 0)
+		(layer "User.1")
+		(uuid "78947d55-0ae5-42b5-a712-0fb41dfb3bab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Force Sensor Connections"
+		(at 36.5 48.5 0)
+		(layer "User.1")
+		(uuid "e05d3da5-d399-419b-8caa-39b32d56a282")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)

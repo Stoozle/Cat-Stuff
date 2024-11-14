@@ -4751,8 +4751,20 @@
 		(uuid 1ba5dc88-c015-405c-9a01-4a5f600c0544)
 	)
 	(rectangle
-		(start 281.686 40.132)
-		(end 326.136 128.778)
+		(start 17.78 76.2)
+		(end 173.99 161.29)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4b5bfe6a-eae7-4cd8-b5b8-326bad549548)
+	)
+	(rectangle
+		(start 188.976 62.992)
+		(end 254 154.94)
 		(stroke
 			(width 0.254)
 			(type dash)
@@ -4765,7 +4777,7 @@
 	)
 	(text "Controller\n"
 		(exclude_from_sim no)
-		(at 288.29 41.91 0)
+		(at 196.342 59.944 0)
 		(effects
 			(font
 				(size 1.397 1.397)
@@ -4775,6 +4787,36 @@
 			)
 		)
 		(uuid "431e8d45-3137-4ffb-8d76-15e4940f5a5d")
+	)
+	(text "The files for these buttons are insane- the models don't reflect\nthe actual parts. Change this.\n"
+		(exclude_from_sim no)
+		(at 83.312 25.146 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5f1ff15a-1ae6-4bad-b046-d38ceb79e714")
+	)
+	(text "USB C and Power_PROG are for programming only.\nSW1 is dip switch to switch power from the functioning\nFLOPS system to USB. It has its own LDO to simplify things."
+		(exclude_from_sim no)
+		(at 49.276 83.312 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b92e319e-df78-4e30-8f83-b4f849ad0fe5")
+	)
+	(text "BOOT button - hold boot while flashing to upload"
+		(exclude_from_sim no)
+		(at 43.942 65.278 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e0767001-0b7d-43d9-93a9-5447c36d71c0")
 	)
 	(text "Power_PROG"
 		(exclude_from_sim no)
