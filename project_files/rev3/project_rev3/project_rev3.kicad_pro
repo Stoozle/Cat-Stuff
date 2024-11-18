@@ -460,7 +460,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -575,6 +580,15 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "2c76aad2-f58e-4a51-9b78-5834a8cd02ae",
+      "Root"
+    ],
+    [
+      "73a755dc-107c-49ce-b3f7-028b88f61c98",
+      "controller"
+    ]
+  ],
   "text_variables": {}
 }
