@@ -25205,8 +25205,8 @@
 		(uuid "bae0dd14-607e-4999-bbce-0fa47c480f82")
 	)
 	(gr_rect
-		(start 35 43.5)
-		(end 56 123.5)
+		(start 35.85 59.05)
+		(end 56.85 128.4)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -25216,8 +25216,8 @@
 		(uuid "0dc0f123-f081-4b98-9e97-8b38df084ac7")
 	)
 	(gr_rect
-		(start 77.5 109.5)
-		(end 134 163)
+		(start 77.5 112.45)
+		(end 132.05 163)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -25227,8 +25227,8 @@
 		(uuid "550e7a50-7b2f-4e29-8666-456f8e34a42e")
 	)
 	(gr_rect
-		(start 78 38.5)
-		(end 102 84)
+		(start 82.75 57.7)
+		(end 106.75 103.2)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -25249,8 +25249,8 @@
 		(uuid "75183f83-0c9e-4206-bcdb-18157ce37313")
 	)
 	(gr_rect
-		(start 37.5 126)
-		(end 75.5 162.5)
+		(start 37.8 129.55)
+		(end 75.8 160.85)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -25761,7 +25761,7 @@
 		)
 	)
 	(gr_text "Power FLOPS"
-		(at 81.5 43 0)
+		(at 84.65 61.1 0)
 		(layer "User.1")
 		(uuid "27efb021-be09-4fa3-893e-00b6a8a0e6ce")
 		(effects
@@ -25808,8 +25808,20 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Load Cell Connect"
+		(at 44.35 162.45 0)
+		(layer "User.1")
+		(uuid "af7fd700-8545-4c6b-8cc3-d9bca4e57165")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Force Sensor Connections"
-		(at 36.5 48.5 0)
+		(at 36.45 61.55 0)
 		(layer "User.1")
 		(uuid "e05d3da5-d399-419b-8caa-39b32d56a282")
 		(effects
