@@ -9,7 +9,7 @@
 #define MAX_DATA_PER_DAY 100
 char* WIFI_SSID = "Mohammad";
 char* password = "Hamoor221";
-char* serverName = "helloflops.com/submit";
+char* serverName = "http://helloflops.com/submit";
 
 unsigned long timerDelay = 5000;
 
