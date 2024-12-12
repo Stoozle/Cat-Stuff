@@ -25,7 +25,14 @@ unsigned long lastTime = 0;
 
 const int interruptPin = PIN_INTERRUPT;
 
-  
+// Helper function to get zero-padded strings for date/time components
+String twoDigitString(int value) {
+  if (value < 10) {
+    return "0" + String(value);
+  } else {
+    return String(value);
+  }
+}
 
 void sendWeight(double weight, String dateStr) {
   if (WiFi.status() == WL_CONNECTED) {
@@ -34,6 +41,7 @@ void sendWeight(double weight, String dateStr) {
     http.begin(client, serverName);
 
     String weightStr = String(weight, DEC);
+    // Data in the format "weight=...&date=YYYY-MM-DD HH:MM"
     String dataToSend = "weight=" + weightStr + "&date=" + dateStr;
 
     http.addHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -71,8 +79,6 @@ void setup() {
   scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
 
   pinMode(interruptPin, INPUT_PULLDOWN);
-  // Attach interrupt handler to the pin (triggered on HIGH)
-  //attachInterrupt(digitalPinToInterrupt(interruptPin), interruptHandler, RISING);
 
   // Initialize WiFi
   WiFi.begin(WIFI_SSID, password);
@@ -88,10 +94,8 @@ void setup() {
 }
 
 void loop() {
-  // Check if the interrupt pin is HIGH
   scale.power_up();
   if (digitalRead(interruptPin) == HIGH) {
-    // Perform the regular functionality only if the pin is HIGH
     // Get current time
     time_t now;
     struct tm timeinfo;
@@ -106,40 +110,42 @@ void loop() {
     // Check if the time is within 30 minutes of midnight (00:00)
     bool isNearMidnight = 1;
     //(currentHour == 23 && currentMinute >= 30) || (currentHour == 0 && currentMinute == 0);
-    String dateStr = String(timeinfo.tm_year + 1900) + "-" +
-                     String(timeinfo.tm_mon + 1) + "-" +
-                     String(timeinfo.tm_mday) + " " +
-                     String(timeinfo.tm_hour) + ":" +
-                     String(timeinfo.tm_min);
+
+    // Build the date string with zero-padding
+    String yearStr = String(timeinfo.tm_year + 1900);
+    String monthStr = twoDigitString(timeinfo.tm_mon + 1);
+    String dayStr = twoDigitString(timeinfo.tm_mday);
+    String hourStr = twoDigitString(timeinfo.tm_hour);
+    String minuteStr = twoDigitString(timeinfo.tm_min);
+
+    String dateStr = yearStr + "-" + monthStr + "-" + dayStr + " " + hourStr + ":" + minuteStr;
 
     scale.power_up();
 
-      double weight = scale.get_units();
+    double weight = scale.get_units();
 
-      if (isNearMidnight) {
-        if (weightIndex == 0) {
-          Serial.println("Weight inex is zero, sending data");
-          // If the array is empty, send the current weight
-          sendWeight(weight, dateStr);
-        } else {
-          // If there's data in the array, calculate and send the average weight
-          calculateAndSendAverage(dateStr);
-        }
+    if (isNearMidnight) {
+      if (weightIndex == 0) {
+        Serial.println("Weight index is zero, sending data");
+        // If the array is empty, send the current weight
+        sendWeight(weight, dateStr);
       } else {
-        // Store weight in the array if not within 30 minutes of midnight
-        Serial.println("In weight array loop");
-        if (weightIndex < MAX_DATA_PER_DAY) {
-          weightArray[weightIndex] = weight;
-          weightIndex++;
-        } else {
-          // If the array is full, calculate and send average
-          calculateAndSendAverage(dateStr);
-        }
+        // If there's data in the array, calculate and send the average weight
+        calculateAndSendAverage(dateStr);
       }
+    } else {
+      // Store weight in the array if not within 30 minutes of midnight
+      Serial.println("In weight array loop");
+      if (weightIndex < MAX_DATA_PER_DAY) {
+        weightArray[weightIndex] = weight;
+        weightIndex++;
+      } else {
+        // If the array is full, calculate and send average
+        calculateAndSendAverage(dateStr);
+      }
+    }
 
-  
   }
-  // Go back to light sleep after the interrupt is processed
-  //esp_light_sleep_start();
+  // Go back to light sleep after the interrupt is processed (if needed)
+  // esp_light_sleep_start();
 }
-
