@@ -75,10 +75,11 @@ void setup() {
   rtc_cpu_freq_config_t config;
   rtc_clk_cpu_freq_get_config(&config);
   rtc_clk_cpu_freq_set_config_fast(&config);
+  
+  scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
   scale.set_scale(103.84);
   scale.tare();
-  scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
-
+  
   pinMode(interruptPin, INPUT_PULLDOWN);
 
   // Initialize WiFi
