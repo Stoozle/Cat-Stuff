@@ -77,7 +77,7 @@ void setup() {
   rtc_clk_cpu_freq_set_config_fast(&config);
   
   scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
-  scale.set_scale(103.84);
+  scale.set_scale(104.84);
   scale.tare();
   
   pinMode(interruptPin, INPUT_PULLDOWN);
